@@ -28,6 +28,7 @@ As a UX feature, the user will be able to see their name plugged into our high s
 
 
 
+
 Team attributes:
 
 Aaron: Strength: My javascript skills are pretty decent, at a Code 201 level. I can see the way to get to a solution. Aaron Weakness: Making the website aesthetically pleasing, and the design aspect.
