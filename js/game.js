@@ -14,6 +14,7 @@ function User(name, purse) {
 }
 var Bud = new User('Bud', 500);
 console.log('Bud', Bud);
+userPurse();
 
 function Neighborhood(name, tabby, calico, mainecoon, persian, british, siamese) {
   this.name = name;
