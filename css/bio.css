@@ -1,7 +1,67 @@
-html, body { height: 100%; padding: 0; margin: 0; }
-div { width: 50%; height: 50%; float: left; }
-#div1 { background: rgb(71, 5, 5); }
-#div2 { background: rgb(71, 5, 5); }
-#div3 { background: rgb(71, 5, 5); }
-#div4 { background: rgb(71, 5, 5); }
+html, body { height: 100%; 
+  padding: 0; 
+  margin: 0; 
+  background: rgb(71, 5, 5);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+  font-size: 50px;
+}
+
+h2{
+  font-size:25px; 
+}
+
+p{
+  text-align: center;
+}
+
+div { width: 50%; 
+  height: 50%; 
+  float: left; 
+}
+
+#div1 { background: rgb(71, 5, 5); 
+  color: white;
+  text-align: center;
+}
+
+#div2 { background: rgb(71, 5, 5); 
+  color: white;
+  text-align: center;
+}
+
+#div3 { background: rgb(71, 5, 5); 
+  color: white;
+  text-align: center;
+}
+
+#div4 { background: rgb(71, 5, 5); 
+  color: white;
+  text-align: center;
+}
+
+
+
+#becky {
+  width: 200px;
+  height: 200px;
+}
+
+#daniel {
+  width: 200px;
+  height: 200px;
+}
+
+#aaron {
+  width: 200px;
+  height: 200px;
+}
+
+#leonard {
+  width: 200px;
+  height: 200px;
+}
 

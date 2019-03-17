@@ -1,0 +1,11 @@
+ul#nav li { 
+  display: inline;
+  float: center;
+  text-align: center;
+  margin: 20px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+
+}
+
