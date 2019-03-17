@@ -1,54 +1,5 @@
 'use strict';
 
-function Neighborhood(name, tabby, calico, mainecoon, persian, british, siamese) {
-  this.name = name;
-  this.breedsValue = {
-    tabby: tabby, // 200
-    calico: calico, // 250
-    mainecoon: mainecoon, // 300 
-    persian: persian, // 400
-    british: british, // 500
-    siamese: siamese // 600
-  };
-}
-
-var Ballard = new Neighborhood('Ballard', 200, 250, 300, 400, 500, 600);
-
-console.log('Ballard: ', Ballard);
-
-function buyCat() {
-  var str = document.getElementById('selectBreed').value;
-  str = str.toLowerCase();
-  console.log('User chose:', str);
-  Bud.catInventory[str] += 1;
-  var cost = Ballard.breedsValue[str];
-  console.log(cost);
-  Bud.purse = Bud.purse - cost;
-  console.log('Bud.purse: ', Bud.purse);
-	userPurse();
-	userInventory();
-}
-
-function sellCat() {
-  var str = document.getElementById('selectBreed').value;
-  str = str.toLowerCase();
-  console.log('User chose:', str);
-  Bud.catInventory[str] -= 1;
-  var cost = Ballard.breedsValue[str];
-  console.log(cost);
-  Bud.purse = Bud.purse + cost;
-  console.log('Bud.purse: ', Bud.purse);
-	userPurse();
-	userInventory();
-
-}
-
-var buyButton = document.getElementById('buycat');
-buyButton.addEventListener('click', buyCat);
-
-var sellButton = document.getElementById('sellcat');
-sellButton.addEventListener('click', sellCat);
-
 function User(name, purse) {
   this.purse = purse;
   this.username = name;
@@ -61,17 +12,32 @@ function User(name, purse) {
     siamese: 0,
   };
 }
-
 var Bud = new User('Bud', 500);
-
 console.log('Bud', Bud);
+
+function Neighborhood(name, tabby, calico, mainecoon, persian, british, siamese) {
+  this.name = name;
+  this.breedsValue = {
+    tabby: ['Tabby', tabby], // 200
+    calico: ['Calico', calico], // 250
+    mainecoon: ['Mainecoon', mainecoon], // 300 
+    persian: ['Persian', persian], // 400
+    british: ['British' + british], // 500
+    siamese: ['Siamese' + siamese] // 600
+  };
+}
+var Ballard = new Neighborhood('Ballard', 200, 250, 300, 400, 500, 600);
+var QueenAnne = new Neighborhood('QueenAnne', 100, 300, 800, 500, 1200, 75);
+var Downtown = new Neighborhood('Downtown', 75, 725, 100, 300, 1400, 1500);
+console.log('Ballard: ', Ballard);
+console.log('Queen Anne: ', QueenAnne);
+console.log('Downtown: ', Downtown);
 
 function userPurse() {
 	var x = Bud.purse;
 	console.log(x);
   document.getElementById('purse').innerHTML = x;
 }
-
 function userInventory() {
 	var x = Bud.catInventory;
 	console.log(x);
@@ -79,3 +45,35 @@ function userInventory() {
 	console.log(x);
   document.getElementById('inventory').innerHTML = x;
 }
+
+function buyCat() {
+  var str = document.getElementById('selectBreed').value; //why not event.target.value?
+  str = str.toLowerCase();
+  console.log('User chose:', str);
+  Bud.catInventory[str] += 1;
+  var cost = Ballard.breedsValue[str][1]; //proper syntax?
+  console.log(cost);
+  Bud.purse = Bud.purse - cost;
+  console.log('Bud.purse: ', Bud.purse);
+	userPurse();
+	userInventory();
+}
+
+function sellCat() {
+  var str = document.getElementById('selectBreedToSell').value;
+  str = str.toLowerCase();
+  console.log('User chose:', str);
+  Bud.catInventory[str] -= 1;
+  var cost = Ballard.breedsValue[str][1]; //proper syntax?
+  console.log(cost);
+  Bud.purse = Bud.purse + cost;
+  console.log('Bud.purse: ', Bud.purse);
+	userPurse();
+	userInventory();
+}
+
+var buyButton = document.getElementById('buycat');
+buyButton.addEventListener('click', buyCat);
+
+var sellButton = document.getElementById('sellcat');
+sellButton.addEventListener('click', sellCat);

@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Used Iconifyer to generate favicon: http://iconifier.net -->
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />        
+      <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />         -->
 <!-- 
   <link rel="stylesheet" href="css/reset.css" type="text/css"/>
   <link rel="stylesheet" href="css/style.css" type="text/css"/> -->
@@ -27,7 +27,7 @@
       <h3>Select the cat you want to buy:</h3>
       
       <select id="selectBreed" size="10">
-        <option>Tabby</option>
+        <option>Tabby<p id="Tabby Value"> </p></option>
         <option>Calico</option>
         <option>Mainecoon</option>
         <option>Persian</option>
@@ -39,6 +39,17 @@
       
       <button id='buycat'>Buy</button>
       <button id='sellcat'>Sell</button>
+
+      <h3>Select the cat you want to sell:</h3>
+      
+      <select id="selectBreedToSell" size="10">
+        <option>Tabby</option>
+        <option>Calico</option>
+        <option>Mainecoon</option>
+        <option>Persian</option>
+        <option>British</option>
+        <option>Siamese</option>
+      </select>
 
       <p>Your purse: </p><p id='purse'></p>
       <p>Your inventory: </p><p id='inventory'></p>
