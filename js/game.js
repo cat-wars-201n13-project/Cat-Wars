@@ -1,8 +1,8 @@
 'use strict';
 
-function User(name, purse) {
+function User(username, purse) {
   this.purse = purse;
-  this.username = name;
+  this.username = username;
   this.catInventory = {
     tabby: 0,
     calico: 0,
@@ -32,6 +32,14 @@ var Downtown = new Neighborhood('Downtown', 75, 725, 100, 300, 1400, 1500);
 console.log('Ballard: ', Ballard);
 console.log('Queen Anne: ', QueenAnne);
 console.log('Downtown: ', Downtown);
+
+function breedValueByNeighborhood(name) {
+	var x = this.breedsValue[1];
+	console.log(x);
+	x = JSON.stringify(x);
+	console.log(x);
+  document.getElementById('Tabby Value').innerHTML = x; //start here
+}
 
 function userPurse() {
 	var x = Bud.purse;
