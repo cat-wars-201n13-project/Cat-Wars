@@ -1,0 +1,7 @@
+html, body { height: 100%; padding: 0; margin: 0; }
+div { width: 50%; height: 50%; float: left; }
+#div1 { background: rgb(71, 5, 5); }
+#div2 { background: rgb(71, 5, 5); }
+#div3 { background: rgb(71, 5, 5); }
+#div4 { background: rgb(71, 5, 5); }
+
