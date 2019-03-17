@@ -1,59 +1,81 @@
 'use strict';
 
-function Neighborhood(name, tabby, calico, maine, persian, british, siamese) {
+function Neighborhood(name, tabby, calico, mainecoon, persian, british, siamese) {
   this.name = name;
   this.breedsValue = {
-    tabby: tabby,
-    calico: calico,
-    maine: maine,
-    persian: persian,
-    british: british,
-    siamese: siamese
+    tabby: tabby, // 200
+    calico: calico, // 250
+    mainecoon: mainecoon, // 300 
+    persian: persian, // 400
+    british: british, // 500
+    siamese: siamese // 600
   };
 }
 
-var tabby = 0;
-var calico = 0;
-var maine = 0;
-var persian = 0;
-var british = 0;
-var siamese = 0;
-
-//function addCat(breed) {
-// 	// 	var myBreed = 
-// 	// 	var catInventory[breed] += 1;
-// 	// };
-// 	var subtractCat = function(breed) {
-// 		// var this.catInventory[breed] -= 1;
-var Ballard = new Neighborhood('Ballard', 1, 2, 3, 4, 5, 6);
+var Ballard = new Neighborhood('Ballard', 200, 250, 300, 400, 500, 600);
 
 console.log('Ballard: ', Ballard);
 
-// function User(name, purse) {
-// 	this.username = name;
-// 	// // this.catInventory = {
-// 	// this.tabby = 0;
-// 	// this.calico = 0;
-// 	// this.maine = 0;
-// 	// this.persian = 0;
-// 	// this.british= 0;
-// 	// this.siamese = 0;
-// 	// // };
-// 	// var addCat = function(breed) {
-// 	// 	var catInventory[breed] += 1;
-// 	// };
-// 	var subtractCat = function(breed) {
-// 		// var this.catInventory[breed] -= 1;
-// 	}
-// }
+function buyCat() {
+  var str = document.getElementById('selectBreed').value;
+  str = str.toLowerCase();
+  console.log('User chose:', str);
+  Bud.catInventory[str] += 1;
+  var cost = Ballard.breedsValue[str];
+  console.log(cost);
+  Bud.purse = Bud.purse - cost;
+  console.log('Bud.purse: ', Bud.purse);
+	userPurse();
+	userInventory();
+}
 
-//var buy = document.getElementById('buy');
-//buy.addEventListener('click', handleClick);
-//function handleClick(event) {
-// 	event.preventDefault();
-// 	buyClick = buyClick + 1;
-//};
+function sellCat() {
+  var str = document.getElementById('selectBreed').value;
+  str = str.toLowerCase();
+  console.log('User chose:', str);
+  Bud.catInventory[str] -= 1;
+  var cost = Ballard.breedsValue[str];
+  console.log(cost);
+  Bud.purse = Bud.purse + cost;
+  console.log('Bud.purse: ', Bud.purse);
+	userPurse();
+	userInventory();
 
-var Bud = new User('Bud', 5000);
+}
+
+var buyButton = document.getElementById('buycat');
+buyButton.addEventListener('click', buyCat);
+
+var sellButton = document.getElementById('sellcat');
+sellButton.addEventListener('click', sellCat);
+
+function User(name, purse) {
+  this.purse = purse;
+  this.username = name;
+  this.catInventory = {
+    tabby: 0,
+    calico: 0,
+    mainecoon:0,
+    persian:0,
+    british: 0,
+    siamese: 0,
+  };
+}
+
+var Bud = new User('Bud', 500);
 
 console.log('Bud', Bud);
+
+function userPurse() {
+	var x = Bud.purse;
+	console.log(x);
+  document.getElementById('purse').innerHTML = x;
+}
+
+function userInventory() {
+	var x = Bud.catInventory;
+	console.log(x);
+	x = JSON.stringify(x);
+	console.log(x);
+  document.getElementById('inventory').innerHTML = x;
+}
