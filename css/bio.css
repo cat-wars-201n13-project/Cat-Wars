@@ -8,6 +8,7 @@ html, body { height: 100%;
 
 h1{
   font-size: 50px;
+  padding: 25px;
 }
 
 h2{
@@ -15,7 +16,7 @@ h2{
 }
 
 p{
-  text-align: center;
+  text-align: left;
 }
 
 div { width: 50%; 
@@ -25,7 +26,7 @@ div { width: 50%;
 
 #div1 { background: rgb(71, 5, 5); 
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 #div2 { background: rgb(71, 5, 5); 
