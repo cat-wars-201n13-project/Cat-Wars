@@ -1,4 +1,8 @@
-html, body { height: 100%; 
+/* *{
+  outline: dotted 1px pink;
+} */
+
+body { height: 100%; 
   padding: 0; 
   margin: 0; 
   background: rgb(71, 5, 5);
@@ -12,36 +16,42 @@ h1{
 }
 
 h2{
-  font-size:25px; 
+  font-size:25px;
+  padding-top: 5px;
+  padding-left: 14px;
 }
 
 p{
   text-align: left;
 }
 
-div { width: 50%; 
+img{
+  padding: 10px;
+
+}
+
+div { width: 40%; 
   height: 50%; 
-  float: left; 
+  float: left;
+  padding-right: 10%;
 }
 
-#div1 { background: rgb(71, 5, 5); 
-  color: white;
-  text-align: left;
+.pic{
+  position: absolute;
+  width: 200px;
+  padding: 0px;
 }
 
-#div2 { background: rgb(71, 5, 5); 
-  color: white;
-  text-align: center;
+#div1 { background: rgb(71, 5, 5);
 }
 
-#div3 { background: rgb(71, 5, 5); 
-  color: white;
-  text-align: center;
+#div2 { background: rgb(71, 5, 5);
 }
 
-#div4 { background: rgb(71, 5, 5); 
-  color: white;
-  text-align: center;
+#div3 { background: rgb(71, 5, 5);
+}
+
+#div4 { background: rgb(71, 5, 5);
 }
 
 
@@ -49,19 +59,23 @@ div { width: 50%;
 #becky {
   width: 200px;
   height: 200px;
+  margin: 2px;
 }
 
 #daniel {
   width: 200px;
   height: 200px;
+  margin: 2px;
 }
 
 #aaron {
   width: 200px;
   height: 200px;
+  margin: 2px;
 }
 
 #leonard {
   width: 200px;
   height: 200px;
+  margin: 2px;
 }
