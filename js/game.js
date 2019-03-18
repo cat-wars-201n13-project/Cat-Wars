@@ -1,8 +1,8 @@
 'use strict';
 
-function User(name, purse) {
+function User(username, purse) {
   this.purse = purse;
-  this.username = name;
+  this.username = username;
   this.catInventory = {
     tabby: 0,
     calico: 0,
@@ -33,6 +33,20 @@ var Downtown = new Neighborhood('Downtown', 75, 725, 100, 300, 1400, 1500);
 console.log('Ballard: ', Ballard);
 console.log('Queen Anne: ', QueenAnne);
 console.log('Downtown: ', Downtown);
+
+function breedValueByNeighborhood() {
+	var x = Ballard.breedsValue.tabby[1];
+	console.log('This is breed value', x);
+	x = JSON.stringify(x);
+	console.log(x);
+  // document.getElementById('Tabby Value').innerHTML = x; //not displaying
+  var trEl = document.getElementById('optionTabby'); //get the option row
+  var tdEl = document.createElement('td'); //make a td cell
+  tdEl.textContent = ' ' + x; //add text to the td cell you just created
+  trEl.appendChild(tdEl); //append the td cell to the tr row
+//start here
+}
+breedValueByNeighborhood();
 
 function userPurse() {
 	var x = Bud.purse;
