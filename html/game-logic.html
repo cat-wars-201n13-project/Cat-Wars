@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Used Iconifyer to generate favicon: http://iconifier.net -->
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />        
+      <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />         -->
 <!-- 
   <link rel="stylesheet" href="css/reset.css" type="text/css"/>
   <link rel="stylesheet" href="css/style.css" type="text/css"/> -->
@@ -27,18 +27,29 @@
       <h3>Select the cat you want to buy:</h3>
       
       <select id="selectBreed" size="10">
-        <option>Tabby</option>
-        <option>Calico</option>
-        <option>Mainecoon</option>
-        <option>Persian</option>
-        <option>British</option>
-        <option>Siamese</option>
+        <option id="optionTabby">Tabby</option>
+        <option>Calico<p id="Calico Value"></p></option>
+        <option>Mainecoon<p id="Mainecoon Value"> </p></option>
+        <option>Persian<p id="Persian Value"> </p></option>
+        <option>British<p id="British Value"> </p></option>
+        <option>Siamese<p id="Siamese Value"> </p></option>
       </select>
         
       <p>Click the Buy button to buy it:</p>
       
       <button id='buycat'>Buy</button>
       <button id='sellcat'>Sell</button>
+
+      <h3>Select the cat you want to sell:</h3>
+      
+      <select id="selectBreedToSell" size="10">
+        <option>Tabby<p id="Tabby Quantity"> </p></option>
+        <option>Calico<p id="Calico Quantity"> </p></option>
+        <option>Mainecoon<p id="Mainecoon Quantity"> </p></option>
+        <option>Persian<p id="Persian Quantity"> </p></option>
+        <option>British<p id="British Quantity"> </p></option>
+        <option>Siamese<p id="Siamese Quantity"> </p></option>
+      </select>
 
       <p>Your purse: </p><p id='purse'></p>
       <p>Your inventory: </p><p id='inventory'></p>
