@@ -1,0 +1,19 @@
+html, body { height: 100%; 
+  padding: 0; 
+  margin: 0; 
+  background: rgb(71, 5, 5);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+  font-size: 50px;
+  padding: 25px;
+}
+
+
+
+#nav {
+display: inline-block;
+width: fit-content;
+}
