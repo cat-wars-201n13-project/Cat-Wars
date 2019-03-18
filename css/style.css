@@ -7,5 +7,9 @@ ul#nav li {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
   padding: 60px;
+  outline: solid, black, 5px;
 }
 
+/* .link{
+  outline: solid, black, 5px;
+} */
