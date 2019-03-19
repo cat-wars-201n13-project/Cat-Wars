@@ -5,8 +5,8 @@
 body { height: 100%; 
   padding: 0; 
   margin: 0; 
-  background: rgb(71, 5, 5);
-  color: white;
+  background: rgb(187,114, 6);
+  color: black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -42,16 +42,16 @@ div { width: 40%;
   padding: 0px;
 }
 
-#div1 { background: rgb(71, 5, 5);
+#div1 { background: rgb(187,114, 6);
 }
 
-#div2 { background: rgb(71, 5, 5);
+#div2 { background: rgb(187,114, 6);
 }
 
-#div3 { background: rgb(71, 5, 5);
+#div3 { background: rgb(187,114, 6);
 }
 
-#div4 { background: rgb(71, 5, 5);
+#div4 { background: rgb(187,114, 6);
 }
 
 
