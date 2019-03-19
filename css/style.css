@@ -1,15 +1,12 @@
-ul#nav li { 
-  display: inline;
-  float: center;
-  text-align: center;
-  margin: 20px;
-  color: white;
+body{
+  background: rgb(187,114, 6);
+  color: black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
-  padding: 60px;
-  outline: solid, black, 5px;
 }
 
-/* .link{
-  outline: solid, black, 5px;
-} */
+nav li {
+  display: inline-block;
+  padding: 25px 0;
+  margin-right: 100px;
+  text-align: center;
+}

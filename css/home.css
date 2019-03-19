@@ -1,11 +1,6 @@
-html, body { height: 100%; 
+body { height: 100%; 
   padding: 0; 
-  margin: 0; 
-  background: rgb(197, 114, 6);
-  color: orange;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: black;
-  
+  margin: 0;  
 }
 
 h1{
@@ -47,16 +42,6 @@ p {
 #move3 {
   
   text-align: center;
-}
-nav {
-  text-align: center;
-}
-
-nav li {
-  display: inline-block;
-  padding: 25px 0;
-  margin-right: 100px;
-
 }
 
 img {
