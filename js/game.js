@@ -83,11 +83,12 @@ function userInventory() {
 function buyCat() {
   var str = document.getElementById('selectBreed').value; //why not event.target.value?
   str = str.toLowerCase();
-  console.log('User chose:', str);
+  console.log('User chose:', str); // str is defined as "tabby 200" or all of the value to the key on line 22
   Bud.catInventory[str] += 1;
+  str = str.charAt(0).toUpperCase() + str.slice(1); //slices the integer from the breed string
   //var cost = Ballard.breedsValue[str][1];
   //if , need random function
-  // var cost = arrayOfNeighborhoods[0].breedsValue[str][1]; //why won't this work?
+  var cost = arrayOfNeighborhoods[0].breedsValue.str[1]; //why won't this work?
   console.log(cost);
   Bud.purse = Bud.purse - cost;
   console.log('Bud.purse: ', Bud.purse);
