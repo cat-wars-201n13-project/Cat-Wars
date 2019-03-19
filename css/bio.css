@@ -15,6 +15,10 @@ h1{
   padding: 25px;
 }
 
+ul{
+  display: inline-block
+}
+
 h2{
   font-size:25px;
   padding-top: 5px;
