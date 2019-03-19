@@ -17,15 +17,17 @@ nav li {
 body { height: 100%; 
   padding: 0; 
   margin: 0; 
-  background: rgb(187,114, 6);
-  color: black;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* h1{
   font-size: 50px;
   padding: 25px;
+<<<<<<< HEAD
 } */
+=======
+  text-align: center;
+}
+>>>>>>> 0dd80052e60f36be81528ea718419d0ae28bc868
 
 h2{
   font-size:25px;

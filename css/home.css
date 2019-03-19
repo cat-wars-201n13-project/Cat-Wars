@@ -1,11 +1,15 @@
-html, body { height: 100%; 
+body { height: 100%; 
   padding: 0; 
+<<<<<<< HEAD
   margin: 0; 
   background: rgb(197, 114, 6);
   color: rgb(197, 114, 6);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: black;
   
+=======
+  margin: 0;  
+>>>>>>> 0dd80052e60f36be81528ea718419d0ae28bc868
 }
 
 /* nav {

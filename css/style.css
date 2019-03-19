@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ul#nav li { 
   display: inline;
   float: center;
@@ -20,4 +21,17 @@
   display: inline-block;
   padding: 25px 0;
   margin-right: 100px;
+=======
+body{
+  background: rgb(187,114, 6);
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav li {
+  display: inline-block;
+  padding: 25px 0;
+  margin-right: 100px;
+  text-align: center;
+>>>>>>> 0dd80052e60f36be81528ea718419d0ae28bc868
 }
