@@ -78,12 +78,16 @@ function userInventory() {
   document.getElementById('inventory').innerHTML = x;
 }
 
+
+//start here; check str and .value
 function buyCat() {
   var str = document.getElementById('selectBreed').value; //why not event.target.value?
   str = str.toLowerCase();
   console.log('User chose:', str);
   Bud.catInventory[str] += 1;
-  var cost = Ballard.breedsValue[str][1]; //proper syntax?
+  //var cost = Ballard.breedsValue[str][1];
+  //if , need random function
+  // var cost = arrayOfNeighborhoods[0].breedsValue[str][1]; //why won't this work?
   console.log(cost);
   Bud.purse = Bud.purse - cost;
   console.log('Bud.purse: ', Bud.purse);
@@ -92,11 +96,12 @@ function buyCat() {
 }
 
 function sellCat() {
-  var str = document.getElementById('selectBreedToSell').value;
-  str = str.toLowerCase();
+  var str = document.getElementById('selectBreedToSell').value; //using the str variable as not a string
+  str = str.toLowerCase(); //try making this a unique variable so that I can use the str variable as a string
   console.log('User chose:', str);
   Bud.catInventory[str] -= 1;
-  var cost = Ballard.breedsValue[str][1]; //proper syntax?
+  var cost = Ballard.breedsValue[str][1];
+  //var cost = arrayOfNeighborhoods[0].breedsValue[str][1]; //why won't this work?
   console.log(cost);
   Bud.purse = Bud.purse + cost;
   console.log('Bud.purse: ', Bud.purse);
