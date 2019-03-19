@@ -1,4 +1,4 @@
-ul#nav li { 
+/* ul#nav li { 
   display: inline;
   float: center;
   text-align: center;
@@ -8,8 +8,16 @@ ul#nav li {
   line-height: 1.5;
   padding: 60px;
   outline: solid, black, 5px;
-}
+} */
 
 /* .link{
   outline: solid, black, 5px;
 } */
+
+#navbar {
+  text-align: center;
+
+  display: inline-block;
+  padding: 25px 0;
+  margin-right: 100px;
+}
