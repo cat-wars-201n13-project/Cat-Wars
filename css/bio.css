@@ -8,7 +8,7 @@ body { height: 100%;
   /* background-image: url("../img/patrick-tomasso-71909-unsplash.jpg");
   background-size: cover;
   background-position: center; */
-  color: black;  
+  color: lightgray;  
 }
 
 .bg-image {
@@ -22,16 +22,32 @@ h1{
   font-size: 50px;
   padding: 25px;
   text-align: center;
+  font-family: Impact, Charcoal, sans-serif;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 h2{
   font-size:25px;
   padding-top: 5px;
   padding-left: 14px;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 p{
   text-align: left;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 img{
