@@ -14,7 +14,8 @@ body { height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: .6;
+  opacity: .8;
+  overflow: auto;
 }
 
 
@@ -26,6 +27,11 @@ h1{
   margin-left: 50px;
   margin-right: 40px;
   font-family: Impact, Charcoal, sans-serif;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 img {
@@ -37,6 +43,7 @@ img {
   height: 300px;
   object-fit: contain;
   /* float: right; */
+  opacity: 1;
 }
 
 h2 {
