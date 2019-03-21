@@ -77,3 +77,14 @@ div { width: 40%;
   height: 200px;
   margin: 2px;
 }
+
+#watermark {
+  background-image: url("../img/City photo.jpeg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .8;
+}
+
