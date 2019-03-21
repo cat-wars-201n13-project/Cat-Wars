@@ -1,6 +1,8 @@
 'use strict';
 
 function User(username, purse) {
+  var today = new Date();
+  this.playDate = `${today.getMonth() + 1}` + '/' + `${today.getDate()}` + '/' + `${today.getFullYear()}`;
   this.purse = purse;
   this.username = username;
   this.neighborhood = 0;
