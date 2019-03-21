@@ -48,9 +48,14 @@ img {
 
 h2 {
   font-size: 60px;
-  text-align: left;
+  text-align: center;
   padding-top: 20px;
   padding-left: 50px;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 p {
@@ -60,39 +65,68 @@ p {
   padding-right: 50px;
   padding-top: 10px;
   font-size: 20px;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 #actions {
   text-align: center;
   padding-top: 15px;
   font-size: 40px;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 #move1 {
   list-style-type: none;
   text-align: center;
   font-size: 40px;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 #move2 {
   list-style-type: none;
   text-align: center;
   font-size: 40px;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 #move3 {
   list-style-type: none;
   text-align: center;
   font-size: 40px;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 #last {
   padding-bottom: 50px;
 }
 
-#disclaimer {
+.disclaimer {
   float: right;
-
-  font-size: 10px;
+  font-size: 13px;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
   
 }
 
