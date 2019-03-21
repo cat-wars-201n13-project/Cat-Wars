@@ -1,19 +1,49 @@
 body { height: 100%; 
   padding: 0; 
   margin: 0;  
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  color: lightgray;
 }
+
+#watermark {
+  background-image: url("../img/City photo.jpeg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .6;
+}
+
 
 h1{
   font-size: 50px;
   padding: 25px;
+  padding-bottom: 15px;
   text-align: center;
+  margin-left: 50px;
+  margin-right: 40px;
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+img {
+  height: 400px;
+ 
+  display: inline-block;
+  margin-left: 28px;
+  margin-right: 20px;
+  height: 300px;
+  object-fit: contain;
+  /* float: right; */
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 60px;
   text-align: left;
   padding-top: 20px;
-  padding-left: 10px;
+  padding-left: 50px;
 }
 
 p {
@@ -22,52 +52,44 @@ p {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 10px;
+  font-size: 20px;
 }
 
 #actions {
   text-align: center;
   padding-top: 15px;
+  font-size: 40px;
 }
 
 #move1 {
-  
+  list-style-type: none;
   text-align: center;
+  font-size: 40px;
 }
 
 #move2 {
-  
+  list-style-type: none;
   text-align: center;
+  font-size: 40px;
 }
 
 #move3 {
-  
+  list-style-type: none;
   text-align: center;
+  font-size: 40px;
+}
+#last {
+  padding-bottom: 50px;
 }
 
-img {
-  /* height: 200px; */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  height: 300px;
-  object-fit: contain;
+#disclaimer {
+  float: right;
+
+  font-size: 10px;
   
 }
 
-#alf {
- 
-  /* height: 100px; */
-  opacity: .4;
-  /* position: absolute;
-  bottom: 0; */
-  position: ansolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%;
- 
-}
+
+  
+
+
