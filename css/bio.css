@@ -5,6 +5,17 @@
 body { height: 100%; 
   padding: 0; 
   margin: 0; 
+  /* background-image: url("../img/patrick-tomasso-71909-unsplash.jpg");
+  background-size: cover;
+  background-position: center; */
+  color: black;  
+}
+
+.bg-image {
+  background-image: url("../img/patrick-tomasso-71909-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
 }
 
 h1{
@@ -39,20 +50,6 @@ div { width: 40%;
   width: 200px;
   padding: 0px;
 }
-
-#div1 { background: rgb(187,114, 6);
-}
-
-#div2 { background: rgb(187,114, 6);
-}
-
-#div3 { background: rgb(187,114, 6);
-}
-
-#div4 { background: rgb(187,114, 6);
-}
-
-
 
 #becky {
   width: 200px;
