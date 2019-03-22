@@ -1,3 +1,7 @@
+*{
+  outline: dotted 1px pink;
+}
+
 .navbar {
   
   font-size: 50px;
@@ -44,4 +48,42 @@ ul li a:hover {
   clear: both;
   content: "";
 
+}
+
+body{
+  color: lightgrey;
+  font-size: 30px;
+  text-align: center;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+#buycat{
+  font-size: 20px;
+}
+
+#sellcat{
+  font-size: 20px;
+}
+
+#changeNeighborhood{
+  font-size: 20px;
+}
+
+.stat{
+  padding-bottom: 20px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

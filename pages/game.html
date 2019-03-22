@@ -22,46 +22,56 @@
       
       <div class="clearfix"></div>
   </h1>
-  <div><p>Stats</p>
-    <ul>
-      <li id="displayUsername"><p>Username: </p><p id="playerName"></p></li>
-      <li id="dailyActionTally"><p>Daily Actions: </p><p id="DATally"></p></li>
-      <li id="daysLeftTally"><p>Days Left: </p><p id="DLTally"></p></li>
-      <li id="currentPurse"><p>Your purse: </p><p id="purse"></p></li>
-    </ul>
-  
-  
 
-  <h1 id ="neighborhood"></h1>
- 
 
-    <h3>Select the cat you want to buy:</h3>
+  <div class="row">
+    <div><p>Stats</p>
+      <ul class="stat">
+        <li id="displayUsername"><p>Welcome to </p><p id="neighborhood"></p><p> </p><p id="playerName"></p></li>
+        <li id="dailyActionTally"><p>Actions Left for the Day: </p><p id="DATally"></p></li>
+        <li id="daysLeftTally"><p>Days Left: </p><p id="DLTally"></p></li>
+        <li id="currentPurse"><p>Your purse: </p><p id="purse"></p></li>
+      </ul>
     
-    <select id="selectBreed" size="10">
-      <option id="optionTabby">Tabby</option>
-      <option id="optionCalico">Calico</option>
-      <option id="optionMainecoon">Mainecoon</option>
-      <option id="optionPersian">Persian</option>
-      <option id="optionBritish">British</option>
-      <option id="optionSiamese">Siamese</option>
-    </select>
+    <div class= "column">
+      <h1 id ="neighborhood"></h1>
+    
+
+        <h3>Select the cat you want to buy:</h3>
+        
+        <select id="selectBreed" size="10">
+          <option id="optionTabby">Tabby</option>
+          <option id="optionCalico">Calico</option>
+          <option id="optionMainecoon">Mainecoon</option>
+          <option id="optionPersian">Persian</option>
+          <option id="optionBritish">British</option>
+          <option id="optionSiamese">Siamese</option>
+        </select>
+    </div>
+
+    <div class="column">
+      <p>Click the Buy/Sell button to buy/sell it:</p>
       
-    <p>Click the Buy button to buy it:</p>
-    
-    <button id='buycat'>Buy</button>
-    <button id='sellcat'>Sell</button>
-    <button id='changeNeighborhood'>Scoot</button>
+      <button id="buycat">Buy</button>
+      <button id="sellcat">Sell</button>
+      <button id="changeNeighborhood">Scoot</button>
+    </div>
 
-    <h3>Select the cat you want to sell:</h3>
-    
-    <select id="selectBreedToSell" size="10">
-      <option id="TabbyRow">Tabby</option>
-      <option id="CalicoRow">Calico</option>
-      <option id="MainecoonRow">Mainecoon</option>
-      <option id="PersianRow">Persian</option>
-      <option id="BritishRow">British</option>
-      <option id="SiameseRow">Siamese</option>
-    </select>
+
+    <div class="column">
+      <h3>Select the cat you want to sell:</h3>
+      
+      <select id="selectBreedToSell" size="10">
+        <option id="TabbyRow">Tabby</option>
+        <option id="CalicoRow">Calico</option>
+        <option id="MainecoonRow">Mainecoon</option>
+        <option id="PersianRow">Persian</option>
+        <option id="BritishRow">British</option>
+        <option id="SiameseRow">Siamese</option>
+      </select>
+    </div>
+
+  </div>
 
     <p></p><p id='purse'></p>
     <p></p><p id='inventory'></p>
