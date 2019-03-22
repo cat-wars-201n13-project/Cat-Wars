@@ -17,10 +17,24 @@ function User(username, purse) {
     siamese: 0,
   };
 }
-var Player = new User('Mike', 500);
+
+// var x = localStorage.getItem('home.username');
+var x = JSON.parse(localStorage.playerName);
+var Player = new User (x, 500);
+
 console.log('Player', Player);
-userPurse();
-displayPlayer(Player); //hard-coded, update last
+// userPurse();
+// displayPlayer(Player); //hard-coded, update last
+
+function displayPlayer() {
+
+  
+  breedValueByNeighborhood(Player.neighborhood); //calls the function we just made, starting with the Players current neighborhood
+  breedQuantityToSellByUser(Player);
+}
+// var submitButton = document.getElementById('playerSubmit');
+// console.log(submitButton);
+// submitButton.addEventListener('submit', displayPlayer);
 
 function Neighborhood(name, tabby, calico, mainecoon, persian, british, siamese) {
   this.name = name;
@@ -73,7 +87,7 @@ function breedValueByNeighborhood(arrayOfNeighborhoodsIndex) {
     header.textContent = arrayOfNeighborhoods[Player.neighborhood].name; //updates the name of the neighborhood the player is in
   }
 }
-breedValueByNeighborhood(Player.neighborhood); //calls the function we just made, starting with the Players current neighborhood
+// breedValueByNeighborhood(Player.neighborhood); //calls the function we just made, starting with the Players current neighborhood
 
 
 function breedQuantityToSellByUser(Player) {
@@ -90,19 +104,14 @@ function breedQuantityToSellByUser(Player) {
   }
   document.getElementById('DATally').textContent = Player.clicks;
   document.getElementById('DLTally').textContent = Player.daysLeft;
+  document.getElementById('playerName').textContent = Player.username;
 }
-breedQuantityToSellByUser(Player);
+// breedQuantityToSellByUser(Player);
 
 function userPurse() {
   var x = Player.purse;
   console.log(x);
   document.getElementById('purse').innerHTML = x;
-}
-
-function displayPlayer() {
-  var x = Player.username;
-  console.log(x);
-  document.getElementById('playerName').innerHTML = x;
 }
 
 function userInventory() {
@@ -198,4 +207,7 @@ sellButton.addEventListener('click', sellCat);
 
 var scootButton = document.getElementById('changeNeighborhood');
 scootButton.addEventListener('click', changeNeighborhood);
+
+displayPlayer();
+
 
