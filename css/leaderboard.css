@@ -1,19 +1,27 @@
-.navbar {
+/* .navbar {
   
   font-size: 50px;
   padding: 25px;
   padding-bottom: 15px;
   text-align: center;
-  margin-left: 50px;
-  margin-right: 40px;
+  margin: 0 auto;
+  width: 75%;
+  
   font-family: Impact, Charcoal, sans-serif;
-  float: left;
+ 
   text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
 }
+
+.navbar li {
+display: inline-block;
+
+} */
+
+
 
 #watermark {
   background-image: url("../img/City photo.jpeg");

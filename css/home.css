@@ -7,22 +7,8 @@ body { height: 100%;
   color: lightgray;
 }
 
-.navbar {
-  
-  font-size: 50px;
-  padding: 25px;
-  padding-bottom: 15px;
-  text-align: center;
-  margin-left: 50px;
-  margin-right: 40px;
-  font-family: Impact, Charcoal, sans-serif;
-  float: left;
-  text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
-}
+
+
 
 #watermark {
   background-image: url("../img/City photo.jpeg");
@@ -36,7 +22,7 @@ body { height: 100%;
 }
 
 
-h1{
+h2{
   font-size: 50px;
   text-align: center;
   font-family: Impact, Charcoal, sans-serif;
@@ -52,6 +38,11 @@ h1{
   padding-bottom: 20px;
   padding-top: 0px;
 }
+
+#homepix {
+  width: 75%;
+  margin: 0 auto;
+}
 img {
   height: 400px;
   
@@ -65,11 +56,11 @@ img {
   border: 2px solid black;
 }
 
-h2 {
+h3 {
   font-size: 60px;
   text-align: center;
   padding-top: 20px;
-  padding-left: 50px;
+  
   text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
