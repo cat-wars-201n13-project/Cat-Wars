@@ -27,6 +27,18 @@ h1{
 		1px 1px 0 #000;
 }
 
+nav ul li a:link {
+  color: yellowgreen;
+}
+
+nav ul li a:visited {
+color: red;
+}
+
+nav ul li a:hover {
+  color: orange;
+}
+
 h2{
   font-size:25px;
   padding-top: 5px;
