@@ -4,15 +4,26 @@
   padding: 25px;
   padding-bottom: 15px;
   text-align: center;
-  margin-left: 50px;
-  margin-right: 40px;
+  
   font-family: Impact, Charcoal, sans-serif;
-  float: left;
+  
   text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
+}
+
+nav ul li a:link {
+  color: yellowgreen;
+}
+
+nav ul li a:visited {
+color: red;
+}
+
+nav ul li a:hover {
+  color: orange;
 }
 
 #watermark {

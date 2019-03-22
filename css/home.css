@@ -1,3 +1,5 @@
+
+
 body { height: 100%; 
   padding: 0; 
   margin: 0;  
@@ -13,15 +15,26 @@ body { height: 100%;
   padding: 25px;
   padding-bottom: 15px;
   text-align: center;
-  margin-left: 50px;
-  margin-right: 40px;
+  
   font-family: Impact, Charcoal, sans-serif;
-  float: left;
+  
   text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
+}
+
+nav ul li a:link {
+  color: yellowgreen;
+}
+
+nav ul li a:visited {
+color: red;
+}
+
+nav ul li a:hover {
+  color: orange;
 }
 
 #watermark {
@@ -36,7 +49,7 @@ body { height: 100%;
 }
 
 
-h1{
+h1 {
   font-size: 50px;
   text-align: center;
   font-family: Impact, Charcoal, sans-serif;
@@ -45,6 +58,11 @@ h1{
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
+}
+
+#homepix {
+  width: 75%;
+  margin: 0 auto;
 }
 
 .title {
@@ -69,7 +87,7 @@ h2 {
   font-size: 60px;
   text-align: center;
   padding-top: 20px;
-  padding-left: 50px;
+  
   text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
@@ -78,10 +96,11 @@ h2 {
 }
 
 p {
-  text-align: left;
+  text-align: center;
   display: inline-block;
   padding-left: 50px;
   padding-right: 50px;
+  
   padding-top: 20px;
   font-size: 20px;
   text-shadow:
@@ -150,6 +169,6 @@ p {
 }
 
 
-  
+
 
 
