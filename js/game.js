@@ -191,12 +191,13 @@ function changeNeighborhood() {
 }
 
 function endGame() {
+  localStorage.playerPurse = Player.purse;
   if (Player.purse >= 5000) {
     alert('You win!');
   } else {
     alert('Wah, wah! You lose.');
   }
-  window.location.href = "../pages/leaderboard.html";
+  window.location.href = '../pages/leaderboard.html';
 }
 
 var buyButton = document.getElementById('buycat');
