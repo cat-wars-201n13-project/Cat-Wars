@@ -34,9 +34,7 @@ function User(username, purse) {
   };
 }
 
-// var x = localStorage.getItem('home.username');
-//var x = JSON.parse(localStorage.playerName);
-var Player = new User (gameData.user, 500);
+var Player = new User (gameData.userData.userName, 500);
 
 console.log('Player', Player);
 // userPurse();
@@ -205,6 +203,8 @@ function changeNeighborhood() {
 }
 
 function endGame() {
+  gameData.userData.date = Player.playDate;
+  gameData.userData.purse = Player.purse;
   saveDataTolocalStorage();
   if (Player.purse >= 5000) {
     alert('You win!');
