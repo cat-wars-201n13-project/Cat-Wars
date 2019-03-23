@@ -8,7 +8,8 @@ const gameData = {
     fourthPlace: []},
   userData: {
     purse: 0,
-    userName: ''
+    userName: '',
+    date: '',
   }
 };
 
