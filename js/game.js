@@ -1,5 +1,28 @@
 'use strict';
 
+const data = {
+		leaderboard: {
+					firstPlace: ['ALF', '9/22/1986', '$100,000'],
+					secondPlace: [],
+					thirdPlace: [],
+					fourthPlace: []},
+		gameState: {
+					daysLeft: 7,
+					actionsLeft: 5},
+		userData: {
+					purse: 500,
+					userName: ''
+				}
+}
+
+function saveDataTolocalStorage() {
+		localStorage.setItem(data);
+}
+
+function pullDataFromlocalStorage() {
+		localStorage.getItem(data);
+}
+
 function User(username, purse) {
   var today = new Date();
   this.playDate = `${today.getMonth() + 1}` + '/' + `${today.getDate()}` + '/' + `${today.getFullYear()}`;
