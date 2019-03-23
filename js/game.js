@@ -43,6 +43,7 @@ console.log('Player', Player);
 // displayPlayer(Player); //hard-coded, update last
 
 function displayPlayer() {
+
   breedValueByNeighborhood(Player.neighborhood); //calls the function we just made, starting with the Players current neighborhood
   breedQuantityToSellByUser(Player);
 }
