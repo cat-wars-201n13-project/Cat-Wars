@@ -26,7 +26,7 @@ console.log('Player', Player);
 // userPurse();
 // displayPlayer(Player); //hard-coded, update last
 
-function displayPlayer() {
+function displayPlayer() {                                                                                                                                                                                                                                                                                                      
 
   
   breedValueByNeighborhood(Player.neighborhood); //calls the function we just made, starting with the Players current neighborhood
