@@ -28,7 +28,7 @@ nav ul li a:link {
 }
 
 nav ul li a:visited {
-color: red;
+color: lightsalmon;
 }
 
 nav ul li a:hover {
@@ -74,7 +74,7 @@ h1{
 
 img {
   height: 400px;
-  
+  /* padding-left: 90px; */
   display: inline-block;
   margin-left: 28px;
   margin-right: 20px;
@@ -82,7 +82,7 @@ img {
   object-fit: contain;
   /* float: right; */
   opacity: 1;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 #PlayerForm  {

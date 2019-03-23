@@ -20,7 +20,7 @@ ul li a:link {
 }
 
 ul li a:visited {
-color: red;
+color:lightsalmon;
 }
 
 ul li a:hover {
@@ -63,16 +63,61 @@ body{
   padding-bottom: 5px;
 }
 
+.column p {
+  padding-bottom: 20px;
+}
+
+.column h3 {
+  padding-bottom: 20px;
+}
+
 #buycat{
-  font-size: 20px;
+  background-color: orange;
+font-size: 30px;
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 4px;
+-webkit-transition-duration: .4s;
+transition-duration: .4s;
+}
+
+#buycat:hover {
+  background-color: lightgray;
+  color: white;
 }
 
 #sellcat{
-  font-size: 20px;
+  background-color: orange;
+font-size: 30px;
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 4px;
+-webkit-transition-duration: .4s;
+transition-duration: .4s;
 }
 
-#changeNeighborhood{
-  font-size: 20px;
+#sellcat:hover {
+  background-color: lightgray;
+  color: white;
+}
+
+#changeNeighborhood {
+  background-color: orange;
+font-size: 30px;
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 4px;
+-webkit-transition-duration: .4s;
+transition-duration: .4s;
+}
+
+#changeNeighborhood:hover {
+  background-color: lightgray;
+  color: white;
+}
+
+#inventory{
+  visibility: hidden;
 }
 
 .stat{
@@ -89,3 +134,151 @@ body{
   display: table;
   clear: both;
 }
+Collapse
+
+
+
+
+
+
+
+
+
+/* .navbar {
+  
+  font-size: 50px;
+  padding: 25px;
+  padding-bottom: 15px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 40px;
+  font-family: Impact, Charcoal, sans-serif;
+  float: left;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+ul li a:link {
+  color: yellowgreen;
+}
+
+ul li a:visited {
+color: lightsalmon;
+}
+
+ul li a:hover {
+  color: orange;
+}
+
+
+#watermark {
+  background-image: url("../img/City photo.jpeg");
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .8;
+  
+  overflow: auto;
+}
+
+.clearfix {
+  clear: both;
+  content: "";
+
+}
+
+body{
+  color: lightgrey;
+  font-size: 30px;
+  text-align: center;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.column p {
+  padding-bottom: 20px;
+}
+
+.column h3 {
+  padding-bottom: 20px;
+
+.bigStat{
+  font-size: 35px;
+  text-decoration: underline;
+  padding-bottom: 5px;
+
+}
+
+#buycat{
+  
+  background-color: orange;
+font-size: 30px;
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 4px;
+-webkit-transition-duration: .4s;
+transition-duration: .4s;
+}
+
+#buycat:hover {
+  background-color: lightgray;
+  color: white;
+}
+
+#sellcat{
+  
+  background-color: orange;
+font-size: 30px;
+padding-left: 10px;
+border-radius: 4px;
+-webkit-transition-duration: .4s;
+transition-duration: .4s;
+}
+
+#sellcat:hover {
+  background-color: lightgray;
+  color: white;
+}
+
+#changeNeighborhood{
+  
+  background-color: orange;
+font-size: 30px;
+padding-left: 10px;
+border-radius: 4px;
+-webkit-transition-duration: .4s;
+transition-duration: .4s;
+}
+
+#changeNeighborhood:hover {
+  background-color: lightgray;
+  color: white;
+}
+
+
+#inventory{
+  visibility: hidden;
+}
+
+.stat{
+  padding-bottom: 20px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
