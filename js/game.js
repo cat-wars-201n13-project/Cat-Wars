@@ -1,5 +1,21 @@
 'use strict';
 
+var gameData = getDatafromlocalStorage();
+console.log(gameData);
+
+function saveDataTolocalStorage() {
+  var dataString = JSON.stringify(gameData);
+  localStorage.setItem('gameData', dataString);
+  console.log(dataString);
+}
+
+function getDatafromlocalStorage() {
+  var retrievedData = localStorage.getItem('gameData');
+  var retrievedDataParsed = JSON.parse(retrievedData);
+
+  return retrievedDataParsed;
+}
+
 function User(username, purse) {
   var today = new Date();
   this.playDate = `${today.getMonth() + 1}` + '/' + `${today.getDate()}` + '/' + `${today.getFullYear()}`;
@@ -18,13 +34,15 @@ function User(username, purse) {
   };
 }
 
-var x = JSON.parse(localStorage.playerName);
-var Player = new User (x, 500);
+// var x = localStorage.getItem('home.username');
+//var x = JSON.parse(localStorage.playerName);
+var Player = new User (gameData.user, 500);
 
 console.log('Player', Player);
+// userPurse();
+// displayPlayer(Player); //hard-coded, update last
 
-function displayPlayer() {                                                                                                                                                                                                                                
-  
+function displayPlayer() {
   breedValueByNeighborhood(Player.neighborhood); //calls the function we just made, starting with the Players current neighborhood
   breedQuantityToSellByUser(Player);
 }
@@ -187,7 +205,7 @@ function changeNeighborhood() {
 }
 
 function endGame() {
-  localStorage.playerPurse = Player.purse;
+  saveDataTolocalStorage();
   if (Player.purse >= 5000) {
     alert('You win!');
   } else {
