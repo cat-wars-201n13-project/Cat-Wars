@@ -197,6 +197,7 @@ function changeNeighborhood() {
 function endGame() {
   gameData.userData.date = Player.playDate;
   gameData.userData.purse = Player.purse;
+  gameData.finalScores.push([gameData.userData.username, gameData.userData.date, gameData.userData.purse]);
   saveDataTolocalStorage();
   if (Player.purse >= 5000) {
     alert('You win!');

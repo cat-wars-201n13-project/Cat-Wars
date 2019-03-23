@@ -10,8 +10,7 @@ const gameData = {
   userData: {
     purse: 0,
     userName: '',
-    date: '',
-  }
+    date: '',}
 };
 
 function saveDataTolocalStorage() {
