@@ -47,6 +47,7 @@ function show4ndPlace() {
   document.getElementById('4stplacedate').innerHTML = gameData.leaderboard.fourthPlace[1];
   document.getElementById('4stplacescore').innerHTML = gameData.leaderboard.fourthPlace[2];
 }
+
 showAlfData();
 show2ndPlace();
 show3ndPlace();

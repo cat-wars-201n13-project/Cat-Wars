@@ -1,11 +1,12 @@
 'use strict';
 
 const gameData = {
+  finalScores: [],
   leaderboard: {
     firstPlace: ['ALF', '9/22/1986', '$100,000'],
-    secondPlace: [],
-    thirdPlace: [],
-    fourthPlace: []},
+    secondPlace: ['-', '-', '-'],
+    thirdPlace: ['-', '-', '-'],
+    fourthPlace: ['-', '-', '-'],
   userData: {
     purse: 0,
     userName: '',
