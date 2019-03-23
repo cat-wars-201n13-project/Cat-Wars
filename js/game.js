@@ -4,7 +4,9 @@ var gameData = getDatafromlocalStorage();
 console.log(gameData);
 
 function saveDataTolocalStorage() {
-  localStorage.setItem('data', gameData);
+  var dataString = JSON.stringify(gameData);
+  localStorage.setItem('gameData', dataString);
+  console.log(dataString);
 }
 
 function getDatafromlocalStorage() {
