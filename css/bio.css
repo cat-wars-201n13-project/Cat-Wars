@@ -52,10 +52,10 @@ p{
 		1px 1px 0 #000;
 }
 
-img{
+/* img{
   padding: 10px;
 
-}
+} */
 
 div { width: 40%; 
   height: 50%; 
@@ -63,11 +63,11 @@ div { width: 40%;
   padding-right: 10%;
 }
 
-.pic{
+/* .pic{
   position: absolute;
   width: 200px;
   padding: 0px;
-}
+} */
 
 #becky {
   width: 200px;
@@ -105,3 +105,5 @@ div { width: 40%;
   opacity: .8;
   overflow: auto;
 }
+
+
