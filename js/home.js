@@ -7,10 +7,10 @@ const gameData = {
     secondPlace: ['-', '-', '-'],
     thirdPlace: ['-', '-', '-'],
     fourthPlace: ['-', '-', '-'],
-  userData: {
-    purse: 0,
-    userName: '',
-    date: '',
+    userData: {
+      purse: 0,
+      userName: '',
+      date: '',}
   }
 };
 
