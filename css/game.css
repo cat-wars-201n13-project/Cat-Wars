@@ -118,6 +118,10 @@ transition-duration: .4s;
 }
 
 
+#inventory{
+  visibility: hidden;
+}
+
 .stat{
   padding-bottom: 20px;
 }
