@@ -1,6 +1,4 @@
-/* *{
-  outline: dotted 1px pink;
-} */
+
 
 body { height: 100%; 
   padding: 0; 
@@ -8,12 +6,6 @@ body { height: 100%;
   color: lightgray;  
 }
 
-.bg-image {
-  background-image: url("../img/City\ photo.jpeg");
-  background-size: cover;
-  background-position: center;
-  filter: blur(8px);
-}
 
 h1{
   font-size: 50px;

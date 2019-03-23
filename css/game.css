@@ -63,6 +63,12 @@ body{
 
 .column h3 {
   padding-bottom: 20px;
+
+.bigStat{
+  font-size: 35px;
+  text-decoration: underline;
+  padding-bottom: 5px;
+
 }
 
 #buycat{
