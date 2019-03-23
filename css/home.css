@@ -66,8 +66,9 @@ h1{
 }
 
 #homepix {
-  width: 75%;
+  width: 75;
   margin: 0 auto;
+  
 }
 
 
@@ -83,6 +84,38 @@ img {
   opacity: 1;
   border: 2px solid black;
 }
+
+#PlayerForm  {
+  text-align: center;
+  padding-top: 10px;
+  
+}
+
+#PlayerForm P {
+  font-size: 40px;
+  padding-top: -10px;
+}
+
+#PlayerName {
+  width: 350px; height: 25px; border: 1px solid #999999; padding: 5px;
+  border-radius: 4px;
+  font-size: 30px;
+}
+
+#NameButton {
+background-color: orange;
+font-size: 30px;
+padding-left: 10px;
+border-radius: 4px;
+-webkit-transition-duration: .4s;
+transition-duration: .4s;
+}
+
+#NameButton:hover {
+  background-color: lightgray;
+  color: white;
+}
+
 
 h2 {
   font-size: 60px;
