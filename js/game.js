@@ -37,16 +37,12 @@ function User(username, purse) {
 var Player = new User (gameData.userData.userName, 500);
 
 console.log('Player', Player);
-// userPurse();
-// displayPlayer(Player); //hard-coded, update last
 
 function displayPlayer() {
   breedValueByNeighborhood(Player.neighborhood); //calls the function we just made, starting with the Players current neighborhood
   breedQuantityToSellByUser(Player);
+  userPurse();
 }
-// var submitButton = document.getElementById('playerSubmit');
-// console.log(submitButton);
-// submitButton.addEventListener('submit', displayPlayer);
 
 function Neighborhood(name, tabby, calico, mainecoon, persian, british, siamese) {
   this.name = name;
@@ -60,19 +56,16 @@ function Neighborhood(name, tabby, calico, mainecoon, persian, british, siamese)
   };
 }
 
-var Ballard = new Neighborhood('Ballard', 200, 250, 300, 400, 500, 600);
+var Ballard = new Neighborhood('Ballard', 200, 250, 125, 150, 300, 600);
 var QueenAnne = new Neighborhood('QueenAnne', 100, 300, 800, 500, 1200, 75);
 var Downtown = new Neighborhood('Downtown', 75, 725, 100, 300, 1400, 1500);
+var CapitolHill = new Neighborhood('Capitol Hill', 275, 75, 300, 450, 1200, 150);
+var Waterfront = new Neighborhood('Waterfront', 75, 150, 200, 800, 900, 1200);
+var UniversityDistrict = new Neighborhood('U District', 125, 200, 150, 500, 800, 2000);
 
-console.log('Ballard: ', Ballard);
-console.log('Queen Anne: ', QueenAnne);
-console.log('Downtown: ', Downtown);
-
-var arrayOfNeighborhoods = [Ballard, QueenAnne, Downtown];
+var arrayOfNeighborhoods = [Ballard, QueenAnne, Downtown, CapitolHill, Waterfront, UniversityDistrict];
 var catBreeds = ['Tabby', 'Calico', 'Mainecoon', 'Persian', 'British', 'Siamese'];
 var catPrices = [0, 0, 0, 0, 0, 0];
-
-//for in loop to check all properties in the Ballard Neighborhood object
 
 function breedValueByNeighborhood(arrayOfNeighborhoodsIndex) {
 
@@ -84,7 +77,7 @@ function breedValueByNeighborhood(arrayOfNeighborhoodsIndex) {
   catPrices[5] = arrayOfNeighborhoods[arrayOfNeighborhoodsIndex].breedsValue.siamese[1];
 
   for (var i = 0; i < catBreeds.length; i++) {
-    // debugger;
+
     var trEl = document.getElementById('option' + catBreeds[i]); //get the option row
     if(document.getElementById(catBreeds[i] + 'Price')) { //this checks to see if this exists. It won't exist the first time the page loads.
       tdEl = document.getElementById(catBreeds[i] + 'Price');
@@ -99,11 +92,9 @@ function breedValueByNeighborhood(arrayOfNeighborhoodsIndex) {
     header.textContent = arrayOfNeighborhoods[Player.neighborhood].name; //updates the name of the neighborhood the player is in
   }
 }
-// breedValueByNeighborhood(Player.neighborhood); //calls the function we just made, starting with the Players current neighborhood
-
 
 function breedQuantityToSellByUser(Player) {
-  for (var i = 0; i < catBreeds.length; i++) { 
+  for (var i = 0; i < catBreeds.length; i++) {
     var trEl = document.getElementById(catBreeds[i] + 'Row'); //get the option row
     if(document.getElementById(catBreeds[i] + 'Quantity')) { //if the td cell exists, replace its value
       tdEl = document.getElementById(catBreeds[i] + 'Quantity');
@@ -111,14 +102,14 @@ function breedQuantityToSellByUser(Player) {
       var tdEl = document.createElement('td'); //if the td cell does not exist, make a td cell
       tdEl.id = catBreeds[i] + 'Quantity'; //set the id for the td cell you just made
     }
-    tdEl.textContent = ' ' + Player.catInventory[catBreeds[i].toLowerCase()]; //add text to the td cell you just created 
+    tdEl.textContent = ' ' + Player.catInventory[catBreeds[i].toLowerCase()]; //add text to the td cell you just created
     trEl.appendChild(tdEl); //append the td cell to the tr row
   }
   document.getElementById('DATally').textContent = Player.clicks;
   document.getElementById('DLTally').textContent = Player.daysLeft;
   document.getElementById('playerName').textContent = Player.username;
 }
-// breedQuantityToSellByUser(Player);
+
 
 function userPurse() {
   var x = Player.purse;
@@ -131,60 +122,61 @@ function userInventory() {
   console.log(x);
   x = JSON.stringify(x); //turns those values into a string
   console.log(x);
-  document.getElementById('inventory').innerHTML = x; //sets the innerHTML value to x
+  //document.getElementById('inventory').innerHTML = x; //sets the innerHTML value to x
 }
 
 function buyCat() {
 
   var str = document.getElementById('selectBreed').value; //grabs the value of the selected breed
   str = str.toLowerCase(); //lowercases the resulting string
-  console.log('User chose:', str); // str is defined as a string: "tabby 200" 
+  console.log('User chose:', str); // str is defined as a string: "tabby 200"
 
   var breedName = str.split(' ')[0]; //splits the string at the space and sets the first group of text to the variable breedName
   var cost = +(str.split(' ')[1]); //splits the string at the space and sets the second group of text to the variable cost. The space plus turns the value into an integer
+
   Player.catInventory[breedName.toLowerCase()] += 1;
 
   console.log(cost);
   Player.purse = Player.purse - cost;
   console.log('Player.purse: ', Player.purse);
 
-  Player.clicks = Player.clicks - 1; //if buyCat is called, subtract from tally while tally is less than 5  
+  Player.clicks = Player.clicks - 1; //if buyCat is called, subtract from tally while tally is less than 5
 
   userPurse();
   userInventory();
   breedQuantityToSellByUser(Player);
 
+
   if (Player.clicks === 0) {
     changeNeighborhood();
-  }  
+  }
 }
 
 function sellCat() {
-  var str = document.getElementById('selectBreedToSell').value; 
-  str = str.toLowerCase(); 
+  var str = document.getElementById('selectBreedToSell').value;
+  str = str.toLowerCase();
   console.log('User chose:', str);
- 
+
   var breedName = str.split(' ')[0]; //splits the str string, grabs resulting item at 0 position
   var quantityCats = +(str.split(' ')[1]); //splits the str string, grabs resulting item at 1 position and turns it into an integer
   if(quantityCats > 0) {
     Player.catInventory[breedName] -= 1;
-   
+
     var cost = arrayOfNeighborhoods[Player.neighborhood].breedsValue[breedName][1];
-    // str = str.charAt(0).toUpperCase() + str.slice(1); //Old code
 
     console.log(cost);
     Player.purse = Player.purse + cost;
     console.log('Player.purse: ', Player.purse);
 
     Player.clicks = Player.clicks - 1;
-    
+
     userPurse();
     userInventory();
     breedQuantityToSellByUser(Player);
   }
   if (Player.clicks === 0) {
-    changeNeighborhood(); 
-  }  
+    changeNeighborhood();
+  }
 }
 
 function changeNeighborhood() {
@@ -194,7 +186,7 @@ function changeNeighborhood() {
   }
   Player.neighborhood = randomNeighborhood;
   breedValueByNeighborhood(Player.neighborhood);
-  Player.clicks = 5; 
+  Player.clicks = 5;
   Player.daysLeft = Player.daysLeft - 1;
   if(Player.daysLeft === 0) {
     endGame();
