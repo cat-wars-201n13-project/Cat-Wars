@@ -18,16 +18,12 @@ function User(username, purse) {
   };
 }
 
-// var x = localStorage.getItem('home.username');
 var x = JSON.parse(localStorage.playerName);
 var Player = new User (x, 500);
 
 console.log('Player', Player);
-// userPurse();
-// displayPlayer(Player); //hard-coded, update last
 
-function displayPlayer() {                                                                                                                                                                                                                                                                                                      
-
+function displayPlayer() {                                                                                                                                                                                                                                
   
   breedValueByNeighborhood(Player.neighborhood); //calls the function we just made, starting with the Players current neighborhood
   breedQuantityToSellByUser(Player);
