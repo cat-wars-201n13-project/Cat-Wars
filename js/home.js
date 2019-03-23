@@ -6,12 +6,11 @@ const gameData = {
     firstPlace: ['ALF', '9/22/1986', '$100,000'],
     secondPlace: ['-', '-', '-'],
     thirdPlace: ['-', '-', '-'],
-    fourthPlace: ['-', '-', '-'],
-    userData: {
-      purse: 0,
-      userName: '',
-      date: '',}
-  }
+    fourthPlace: ['-', '-', '-']},
+  userData: {
+    purse: 0,
+    userName: '',
+    date: '',}
 };
 
 function saveDataTolocalStorage() {
@@ -28,8 +27,6 @@ function storePlayerName (event) {
   console.log(gameData);
   window.location.href = 'pages/game.html';
 }
-
-
 
 var submitButton = document.getElementById('NameButton');
 
