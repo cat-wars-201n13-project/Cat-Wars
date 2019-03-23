@@ -3,6 +3,7 @@
   font-size: 50px;
   padding: 25px;
   padding-bottom: 15px;
+  padding-left: 80px;
   text-align: center;
   margin-left: 50px;
   margin-right: 40px;
@@ -20,7 +21,7 @@ ul li a:link {
 }
 
  ul li a:visited {
-color: red;
+color: lightsalmon;
 }
 
  ul li a:hover {
@@ -48,7 +49,7 @@ h2 {
   text-align: center;
   font-size: 100px;
   font-family: Impact, Charcoal, sans-serif;
-  padding-top: 20px;
+  
   color: lightgrey;
 }
 
@@ -59,4 +60,23 @@ ol {
   padding-top: 10%;
   color: lightgrey;
 
+}
+
+img {
+  height: 150px;
+  padding-left: 60px;
+}
+
+p {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 50px;
+  color: lightgray; 
+  font-family: Impact, Charcoal, sans-serif;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }

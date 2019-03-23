@@ -20,7 +20,7 @@ ul li a:link {
 }
 
 ul li a:visited {
-color: red;
+color: lightsalmon;
 }
 
 ul li a:hover {
@@ -57,23 +57,66 @@ body{
 		1px 1px 0 #000;
 }
 
+.column p {
+  padding-bottom: 20px;
+}
+
+.column h3 {
+  padding-bottom: 20px;
+
 .bigStat{
   font-size: 35px;
   text-decoration: underline;
   padding-bottom: 5px;
+
 }
 
 #buycat{
-  font-size: 20px;
+  
+  background-color: orange;
+font-size: 30px;
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 4px;
+-webkit-transition-duration: .4s;
+transition-duration: .4s;
+}
+
+#buycat:hover {
+  background-color: lightgray;
+  color: white;
 }
 
 #sellcat{
-  font-size: 20px;
+  
+  background-color: orange;
+font-size: 30px;
+padding-left: 10px;
+border-radius: 4px;
+-webkit-transition-duration: .4s;
+transition-duration: .4s;
+}
+
+#sellcat:hover {
+  background-color: lightgray;
+  color: white;
 }
 
 #changeNeighborhood{
-  font-size: 20px;
+  
+  background-color: orange;
+font-size: 30px;
+padding-left: 10px;
+border-radius: 4px;
+-webkit-transition-duration: .4s;
+transition-duration: .4s;
 }
+
+#changeNeighborhood:hover {
+  background-color: lightgray;
+  color: white;
+}
+
 
 .stat{
   padding-bottom: 20px;
