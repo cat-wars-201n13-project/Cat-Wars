@@ -1,11 +1,33 @@
 'use strict';
 
+const gameData = {
+  leaderboard: {
+    firstPlace: ['ALF', '9/22/1986', '$100,000'],
+    secondPlace: [],
+    thirdPlace: [],
+    fourthPlace: []},
+  userData: {
+    purse: 0,
+    userName: ''
+  }
+};
+
+function saveDataTolocalStorage() {
+  var dataString = JSON.stringify(gameData);
+  localStorage.setItem('gameData', dataString);
+  console.log(dataString);
+}
+
 function storePlayerName (event) {
   event.preventDefault();
   var x = document.getElementById('PlayerName').value;
-  localStorage.setItem('playerName', JSON.stringify(x));
+  gameData.userData.userName = x;
+  saveDataTolocalStorage();
+  console.log(gameData);
   window.location.href = 'pages/game.html';
 }
+
+
 
 var submitButton = document.getElementById('NameButton');
 
