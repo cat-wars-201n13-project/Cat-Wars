@@ -56,7 +56,7 @@ function Neighborhood(name, tabby, calico, mainecoon, persian, british, siamese)
   };
 }
 
-var Ballard = new Neighborhood('Ballard', 200, 250, 125, 150, 300, 600);
+var Ballard = new Neighborhood('Ballard', 100, 150, 125, 75, 50, 25);
 var QueenAnne = new Neighborhood('QueenAnne', 100, 300, 800, 500, 1200, 75);
 var Downtown = new Neighborhood('Downtown', 75, 725, 100, 300, 1400, 1500);
 var CapitolHill = new Neighborhood('Capitol Hill', 275, 75, 300, 450, 1200, 150);
